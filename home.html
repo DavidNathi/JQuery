@@ -7,35 +7,52 @@
 	<link rel="icon" href="images/logo-small.jpg">
 	<link rel="stylesheet" href="css/style.css">
 	<script src="js/jquery-3.6.0.min.js"></script>
-	<script>
-		$(document).ready(function(){
-			// code goes here
-			$('.sec-item').css({'background-color':'orange','font-size':'12px'});
-		})
-	</script>
 </head>
 <body>
-	<main>
-		<div class="sec-container bg-light">
+	<main class="bg-light">
+		<div class="sec-container">
 			<section class="sec-item p-1 m-1 text-center br-3" id="article1">
 				<h2>Article Title 1</h2>
 				<p>Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
-				<div class="p-2"><div class="btn btn-sm btn-primary br-4">Learn more</div></div>
+				<div class="btn btn-sm btn-primary br-4">Learn more</div>
 			</section>
 			<section class="sec-item p-1 m-1 text-center br-3" id="article2">
 				<h2>Article Title 2</h2>
 				<p>Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
-				<div class="p-2"><div class="btn btn-sm btn-primary br-4">Learn more</div></div>
+				<div class="btn btn-sm btn-primary br-4">Learn more</div>
 			</section>
 			<section class="sec-item p-1 m-1 text-center br-3" id="article3">
 				<h2>Article Title 3</h2>
 				<p>Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
-				<div class="p-2"><div class="btn btn-sm btn-primary br-4">Learn more</div></div>
+				<div class="btn btn-sm btn-primary br-4">Learn more</div>
 			</section>
 		</div>
+		<br><br>
+		<!-- <div class="text-center"><div class="btn btn-sm btn-primary p1 br-4" id="submit">Submit</div></div> -->
+		<br><br>
 	</main>
 	<footer>
 		<div class="text-center p-1">copyright@companyname</div>
 	</footer>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			// code goes here
+			// $("#submit").click(function(){
+			// 	$.ajax({
+			// 		url:"http://localhost/tutorial1/api.php",
+			// 		success: function(output){
+			// 			var objs = JSON.parse(output);
+			// 			$.each(objs, function(index, obj){
+			// 				$(".sec-container").append('<section class="sec-item p-1 m-1 text-center br-3" id="article'+obj.id+'">\
+			// 					<h2>'+obj.title+'</h2>\
+			// 					<p>'+obj.description+'</p>\
+			// 					<div class="btn btn-sm btn-primary br-4">Learn more</div>\
+			// 				</section>');
+			// 			});
+			// 		}
+			// 	});
+			// })
+		});
+	</script>
 </body>
 </html>
